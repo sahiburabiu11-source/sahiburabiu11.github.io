@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AL-MANAF'U INTERNATIONAL ACADEMY</title>
+  <meta name="description" content="AL-MANAF'U INTERNATIONAL ACADEMY - Excellence in education, values and leadership." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AMIA</div>
+        <div class="school-name">
+          <span class="title">AL-MANAF'U</span>
+          <span class="subtitle">INTERNATIONAL ACADEMY</span>
+        </div>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#admissions" class="nav-link">Admissions</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" role="region" aria-label="Welcome">
+      <div class="container hero-content">
+        <h1>AL-MANAF'U INTERNATIONAL ACADEMY</h1>
+        <p class="lead">Nurturing minds, building character, preparing leaders.</p>
+        <div class="hero-cta">
+          <a href="#admissions" class="btn btn-primary">Apply Now</a>
+          <a href="#about" class="btn btn-ghost">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about" role="region" aria-label="About AL-MANAF'U">
+      <h2>About Us</h2>
+      <p class="muted">AL-MANAF'U INTERNATIONAL ACADEMY is committed to providing high-quality, holistic education where academic excellence is combined with moral development and leadership training.</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>To empower every student with knowledge, integrity and skills to thrive in a diverse world.</p>
+        </div>
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>To be a leading center of learning recognized for exceptional teaching and community engagement.</p>
+        </div>
+        <div class="card">
+          <h3>Our Values</h3>
+          <p>Respect • Excellence • Compassion • Responsibility • Innovation</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="container programs" role="region" aria-label="Programs">
+      <h2>Programs</h2>
+      <p class="muted">We offer a continuum of learning from primary through secondary levels with extra-curricular opportunities.</p>
+
+      <div class="program-grid">
+        <article class="program-card">
+          <h4>Early Years</h4>
+          <p>Play-based learning that builds curiosity and foundational skills.</p>
+        </article>
+
+        <article class="program-card">
+          <h4>Primary School</h4>
+          <p>Strong literacy and numeracy with integrated science and arts.</p>
+        </article>
+
+        <article class="program-card">
+          <h4>Secondary School</h4>
+          <p>Preparation for national and international examinations with career guidance.</p>
+        </article>
+
+        <article class="program-card">
+          <h4>STEM & ICT</h4>
+          <p>Hands-on labs and digital literacy to prepare students for the future.</p>
+        </article>
+
+        <article class="program-card">
+          <h4>Sports & Clubs</h4>
+          <p>Physical education, music, drama and leadership clubs.</p>
+        </article>
+
+        <article class="program-card">
+          <h4>Boarding</h4>
+          <p>Safe, nurturing boarding environment for out-of-town students.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="admissions" class="container admissions" role="region" aria-label="Admissions">
+      <h2>Admissions</h2>
+      <p class="muted">We welcome applications throughout the year. Follow the simple steps below to apply.</p>
+
+      <ol class="steps">
+        <li>Download and complete the application form.</li>
+        <li>Submit the form with required documents to the admissions office.</li>
+        <li>Attend interview/assessment (if applicable).</li>
+        <li>Receive acceptance and complete enrollment.</li>
+      </ol>
+
+      <a class="btn btn-primary" href="#" onclick="alert('PDF download placeholder — replace with actual file.')">Download Application Form (PDF)</a>
+    </section>
+
+    <section id="contact" class="container contact" role="region" aria-label="Contact us">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p><strong>Address:</strong>RIMIN AUZINAWA KUDU SABUWAR MADINA UNGOGGO LGA,KANO,NIGERIA</p>
+          <p><strong>Phone:</strong> 07087995957 , 09123480866 , 07065987068 ,09018390878</p>
+          <p><strong>Email:</strong> <a href="mailto:info@al-manafuacademy.example">info@al-manafuacademy.example</a></p>
+
+          <h4>Office Hours</h4>
+          <p>Mon – Fri: 8:00 AM – 4:00 PM</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> AL-MANAF'U INTERNATIONAL ACADEMY</div>
+      <div class="social">
+        <a href="#" aria-label="Facebook">Facebook</a> ·
+        <a href="#" aria-label="Twitter">Twitter</a> ·
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
